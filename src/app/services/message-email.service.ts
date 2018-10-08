@@ -13,9 +13,8 @@ export class MessageEmailService {
    }
    sendMessage(body) {
      try {
-       return this._http.post('http://localhost:3000/sendmessage', body);
+       return this._http.post('https://y2k32-portafolio.herokuapp.com/sendmessage', body);
      } catch (error) {
-       console.log("Hola :(", error);
        return error;
      }
     };

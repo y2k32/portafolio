@@ -8,7 +8,7 @@ export class InfoPaginaService {
 info:InfoPaginaInterface;
 cargada = false;
   constructor(private http: HttpClient) {
-    this.http.get('http://localhost:3000/infopage')
+    this.http.get('https://y2k32-portafolio.herokuapp.com/infopage')
     .subscribe((resp:InfoPaginaInterface) =>{
       this.cargada=true;
       this.info=resp;

@@ -10,7 +10,6 @@ import swal from 'sweetalert2/dist/sweetalert2.js';
 export class AppComponent {
   title = 'frontend';
   constructor(public infoPaginaService:InfoPaginaService){
-    this.showModalInit();
   }
 
   showModalInit(){

@@ -15,7 +15,6 @@ export class HomeComponent implements OnInit {
   constructor(public message: MessageEmailService,public infoPaginaService:InfoPaginaService) {
    }
    contactForm(form) {
-     
       this.message.sendMessage(form).subscribe((res:any)=>{
         console.log("Res = ", res);
         if (res.ok===true) {

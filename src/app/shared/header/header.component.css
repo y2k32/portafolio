@@ -23,7 +23,7 @@ nav {
 }
 
 div#portada {
-    background-image: url(/src/img/nodejs.png);
+    background-image: url(assets/img/nodejs.png);
     height: 300px;
     background-size: cover;
     background-position: center;
@@ -38,7 +38,7 @@ div#portada {
 }
 
 div#fotoperfil {
-    background-image: url(/src/img/nodejs.png);
+    background-image: url(assets/img/nodejs.png);
     background-size: cover;
     background-position: center;
     height: 70%;
