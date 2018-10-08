@@ -1,0 +1,9 @@
+#cardfooter {
+    background-color: white;
+    color: orange;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    width: 100%;
+}

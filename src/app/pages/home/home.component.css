@@ -1,0 +1,16 @@
+div.card {
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+div.card-header {
+    font-size: 25px;
+}
+
+div.card-body {
+    font-size: 20px;
+}
+
+body {
+    margin: 0px;
+}

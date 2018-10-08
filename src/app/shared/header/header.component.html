@@ -1,0 +1,55 @@
+<!-- <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <h5 class="text-white h4">Collapsed content</h5>
+            <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+    </div> -->
+
+<nav class="navbar navbar-expand-lg navbar-dark  scrolling-navbar fixed-top">
+    <div class="container">
+        <a class="navbar-brand m-auto" href="#">
+            <i class="fa fa-folder fa-folder fa-lg"></i> {{infoPaginaService.info?.titulo}}
+        </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapseelements">
+                        <span class="navbar-toggler-icon"></span></button>
+        <div id="collapseelements" class="collapse navbar-collapse navbar-toggleable-xs  flex-row-reverse">
+            <ul class="navbar-nav nav-pills">
+                <li class="nav-item active mr-2 border border-warning ">
+                    <a routerLink="/" class="nav-link ">
+                        <i class="fa fa-home fa-home fa-lg "> </i> Home
+                    </a>
+                </li>
+                <li class="nav-item mr-2 border border-warning">
+                    <a routerLink="/about" class="nav-link">
+                        <i class="fa fa-info-circle fa-info-circle fa-lg "></i> About me
+                    </a>
+                </li>
+                <li class="nav-item mr-2 border border-warning">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-file-code fa-file-code fa-lg"></i> Projects
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="d-flex flex-row col-md-10 offset-md-1" id="portada">
+    <!--<img src="/src/img/nodejs.png" alt="" width="100%" height="300px">-->
+    <div class="d-flex align-items-end p-0 col-md-12">
+        <div class="m-3 col-md-3 col-sm-6 img-thumbnail" id="fotoperfil"></div>
+        <div class="m-button-3 d-inline-flex col-sm-6 col-md-9" id="nombreperfil">
+            <h1>{{infoPaginaService.info?.nombre}}</h1>
+        </div>
+
+    </div>
+</div>
+
+<!-- <div class="jumbotron col-md-10 offset-md-1" id="portada">
+    <img src="/src/img/nodejs.png" alt="" width="100%" height="300px">
+
+    <div class="col-md-8 offset-md-1 " id="fotoperfil" style="background-color: #ff4000;">
+        Level 2: .col-8
+    </div>
+</div> -->

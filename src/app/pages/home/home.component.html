@@ -1,0 +1,59 @@
+<div class="d-flex flex-column  flex-row col-md-10 offset-md-1" style=" padding: 0px;">
+    <div class="card text-justify col-md-12 animated bounceIn delay-4s mb-2">
+        <div class="card-header mb-1">
+            <i class="fas fa-map-marker-alt"></i> Localidad
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Torreón Coah. Mexico</h5>
+            <p class="card-text"></p>
+        </div>
+    </div>
+    <div class="card text-justify col-md-12 mb-2">
+        <div class="card-header mb-1">
+            <i class="fas fa-graduation-cap"></i>{{infoPaginaService.info?.conocimientodev.titulo}}
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">{{infoPaginaService.info?.conocimientodev.lenguajes}}</h5>
+            <h5 class="card-title">{{infoPaginaService.info?.conocimientodev.libfram}}</h5>
+            <h5 class="card-title">{{infoPaginaService.info?.conocimientodev.bd}}</h5>
+            <p class="card-text"></p>
+        </div>
+    </div>
+    <div class="card text-justify col-md-12 mb-2">
+        <div class="card-header mb-1">
+            <i class="fas fa-search"></i>Busco
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Empleo como desarrollador web que me permita laborar desde casa</h5>
+            <p class="card-text"></p>
+        </div>
+    </div>
+    <div class="card text-justify col-md-12 mb-2">
+        <div class="card-header mb-1">
+            <i class="fas fa-envelope"></i>Formulario de contacto
+        </div>
+        <div class="card-body">
+            <form (ngSubmit)="contactForm(form.value)" #form="ngForm">
+                <div class="form-group">
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" name="nombre" ngModel>
+                </div>
+                <div class="form-group">
+                    <label>Asunto</label>
+                    <input type="text" class="form-control" name="asunto" ngModel>
+                </div>
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" class="form-control" name="email" ngModel>
+                </div>
+                <div class="form-group">
+                    <label>Mensaje</label>
+                    <textarea class="form-control" cols="30" rows="6" name="mensaje" ngModel></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+
+</div>
