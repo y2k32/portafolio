@@ -124,7 +124,6 @@ var AppComponent = /** @class */ (function () {
     function AppComponent(infoPaginaService) {
         this.infoPaginaService = infoPaginaService;
         this.title = 'frontend';
-        this.showModalInit();
     }
     AppComponent.prototype.showModalInit = function () {
         sweetalert2_dist_sweetalert2_js__WEBPACK_IMPORTED_MODULE_2___default()({
@@ -396,7 +395,7 @@ var InfoPaginaService = /** @class */ (function () {
         var _this = this;
         this.http = http;
         this.cargada = false;
-        this.http.get('http://localhost:3000/infopage')
+        this.http.get('https://y2k32-portafolio.herokuapp.com/infopage')
             .subscribe(function (resp) {
             _this.cargada = true;
             _this.info = resp;
@@ -447,10 +446,9 @@ var MessageEmailService = /** @class */ (function () {
     }
     MessageEmailService.prototype.sendMessage = function (body) {
         try {
-            return this._http.post('http://localhost:3000/sendmessage', body);
+            return this._http.post('https://y2k32-portafolio.herokuapp.com/sendmessage', body);
         }
         catch (error) {
-            console.log("Hola :(", error);
             return error;
         }
     };
@@ -538,7 +536,7 @@ var FooterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/*body {\r\n    overflow-x: hidden;\r\n    margin: 0px;\r\n    padding: 0px;\r\n}\r\n\r\nnav.navbar {\r\n    margin: 0px;\r\n    font-family: 'Roboto', sans-serif;\r\n    font-size: 20px;\r\n    position: fixed;\r\n    overflow: hidden;\r\n    z-index: 1000;\r\n    width: 100%;\r\n     Set the navbar to fixed position \r\n    top: 0;\r\n     Position the navbar at the top of the page \r\n}*/\r\n\r\nnav {\r\n    font-family: 'Roboto', sans-serif;\r\n    font-weight: bold;\r\n}\r\n\r\ndiv#portada {\r\n    background-image: url(/src/img/nodejs.png);\r\n    height: 300px;\r\n    background-size: cover;\r\n    background-position: center;\r\n    padding-top: 80px;\r\n    margin: auto;\r\n    overflow: hidden;\r\n    margin-top: 0px;\r\n}\r\n\r\n#icono-project {\r\n    margin-right: 5px;\r\n}\r\n\r\ndiv#fotoperfil {\r\n    background-image: url(/src/img/nodejs.png);\r\n    background-size: cover;\r\n    background-position: center;\r\n    height: 70%;\r\n}\r\n\r\ndiv#nombreperfil {\r\n    font-family: 'Roboto', sans-serif;\r\n    color: white;\r\n}\r\n\r\n.top-nav-collapse {\r\n    background-color: white;\r\n}\r\n\r\n.top-nav-collapse a {\r\n    color: orange !important;\r\n}\r\n\r\ndiv#settings {\r\n    position: fixed;\r\n    z-index: 1000;\r\n    border-top-right-radius: 20%;\r\n    width: 1.9rem;\r\n    height: 1.9rem;\r\n    background-color: white;\r\n}\r\n\r\n.top-nav-collapse span.navbar-toggler-icon {\r\n    background-color: orange !important;\r\n}\r\n\r\n/* ul a {\r\n    text-decoration: none;\r\n    color: white;\r\n} */"
+module.exports = "/*body {\r\n    overflow-x: hidden;\r\n    margin: 0px;\r\n    padding: 0px;\r\n}\r\n\r\nnav.navbar {\r\n    margin: 0px;\r\n    font-family: 'Roboto', sans-serif;\r\n    font-size: 20px;\r\n    position: fixed;\r\n    overflow: hidden;\r\n    z-index: 1000;\r\n    width: 100%;\r\n     Set the navbar to fixed position \r\n    top: 0;\r\n     Position the navbar at the top of the page \r\n}*/\r\n\r\nnav {\r\n    font-family: 'Roboto', sans-serif;\r\n    font-weight: bold;\r\n}\r\n\r\ndiv#portada {\r\n    background-image: url(https://firebasestorage.googleapis.com/v0/b/inicio-firebase-6ce2e.appspot.com/o/nodejs.png?alt=media&token=7d7502c6-e458-499c-8be1-52cac3d99d89);\r\n    height: 300px;\r\n    background-size: cover;\r\n    background-position: center;\r\n    padding-top: 80px;\r\n    margin: auto;\r\n    overflow: hidden;\r\n    margin-top: 0px;\r\n}\r\n\r\n#icono-project {\r\n    margin-right: 5px;\r\n}\r\n\r\ndiv#fotoperfil {\r\n    background-image: url(https://firebasestorage.googleapis.com/v0/b/inicio-firebase-6ce2e.appspot.com/o/nodejs.png?alt=media&token=7d7502c6-e458-499c-8be1-52cac3d99d89);\r\n    background-size: cover;\r\n    background-position: center;\r\n    height: 70%;\r\n}\r\n\r\ndiv#nombreperfil {\r\n    font-family: 'Roboto', sans-serif;\r\n    color: white;\r\n}\r\n\r\n.top-nav-collapse {\r\n    background-color: white;\r\n}\r\n\r\n.top-nav-collapse a {\r\n    color: orange !important;\r\n}\r\n\r\ndiv#settings {\r\n    position: fixed;\r\n    z-index: 1000;\r\n    border-top-right-radius: 20%;\r\n    width: 1.9rem;\r\n    height: 1.9rem;\r\n    background-color: white;\r\n}\r\n\r\n.top-nav-collapse span.navbar-toggler-icon {\r\n    background-color: orange !important;\r\n}\r\n\r\n/* ul a {\r\n    text-decoration: none;\r\n    color: white;\r\n} */"
 
 /***/ }),
 

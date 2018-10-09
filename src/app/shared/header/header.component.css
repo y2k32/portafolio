@@ -23,7 +23,7 @@ nav {
 }
 
 div#portada {
-    background-image: url(assets/img/nodejs.png);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/inicio-firebase-6ce2e.appspot.com/o/nodejs.png?alt=media&token=7d7502c6-e458-499c-8be1-52cac3d99d89);
     height: 300px;
     background-size: cover;
     background-position: center;
@@ -38,7 +38,7 @@ div#portada {
 }
 
 div#fotoperfil {
-    background-image: url(assets/img/nodejs.png);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/inicio-firebase-6ce2e.appspot.com/o/nodejs.png?alt=media&token=7d7502c6-e458-499c-8be1-52cac3d99d89);
     background-size: cover;
     background-position: center;
     height: 70%;
