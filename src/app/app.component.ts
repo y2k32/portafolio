@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { InfoPaginaService } from './services/info-pagina.service';
 import swal from 'sweetalert2/dist/sweetalert2.js';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,16 @@ import swal from 'sweetalert2/dist/sweetalert2.js';
 })
 export class AppComponent {
   title = 'frontend';
-  constructor(public infoPaginaService:InfoPaginaService){
+  constructor(public infoPaginaService:InfoPaginaService,private spinner: NgxSpinnerService){
+  }
+  ngOnInit() {
+    /** spinner starts on init */
+    this.spinner.show();
+ 
+    setTimeout(() => {
+        /** spinner ends after 5 seconds */
+        this.spinner.hide();
+    }, 2500);
   }
 
   showModalInit(){

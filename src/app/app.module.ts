@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { appRoutingModule } from './app-routing.module';
 import { AboutComponent } from './pages/about/about.component';
 import { FormsModule } from '@angular/forms';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     AngularFontAwesomeModule,
     appRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
