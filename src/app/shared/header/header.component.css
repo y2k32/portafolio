@@ -23,9 +23,8 @@ nav {
 }
 
 div#portada {
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/inicio-firebase-6ce2e.appspot.com/o/nodejs.png?alt=media&token=7d7502c6-e458-499c-8be1-52cac3d99d89);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/inicio-firebase-6ce2e.appspot.com/o/nodejs-optimizada.jpg?alt=media&token=f289b470-35e5-4735-8502-282a6a0fa4a6);
     height: 300px;
-    background-size: cover;
     background-position: center;
     padding-top: 80px;
     margin: auto;
@@ -38,7 +37,7 @@ div#portada {
 }
 
 div#fotoperfil {
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/inicio-firebase-6ce2e.appspot.com/o/nodejs.png?alt=media&token=7d7502c6-e458-499c-8be1-52cac3d99d89);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/inicio-firebase-6ce2e.appspot.com/o/nodejs-optimizada.jpg?alt=media&token=f289b470-35e5-4735-8502-282a6a0fa4a6);
     background-size: cover;
     background-position: center;
     height: 70%;
